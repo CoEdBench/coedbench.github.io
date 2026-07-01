@@ -212,7 +212,7 @@
 </div>
 
 <!-- STATS -->
-<div class="stats-bar">
+<!-- <div class="stats-bar">
   <div class="stat-item">
     <div class="stat-num">2,095</div>
     <div class="stat-label">Human-verified Instances</div>
@@ -225,7 +225,7 @@
     <div class="stat-num">36.3%</div>
     <div class="stat-label">Cross-file Modifications</div>
   </div>
-</div>
+</div> -->
 
 <!-- BENCHMARK -->
 <section id="benchmark">
@@ -379,9 +379,8 @@
       <h3>Baseline Model Performance</h3>
       <p>How well do current LLMs perform on repository-level multi-target collaborative code editing under Pipeline and Agent settings?</p>
       <div class="rq-links">
-        <a href="RQ1/Pipeline/claude/run_claude_full.jsonl" class="rq-link"><span class="dot"></span>Pipeline Predictions (Claude)</a>
-        <a href="RQ1/Agent/sonnet-4-6/fim_results.jsonl" class="rq-link"><span class="dot"></span>Agent Results (Claude)</a>
-        <a href="test_filtered.jsonl" class="rq-link"><span class="dot"></span>Python Test Set</a>
+        <a href="https://github.com/CoEdBench/CoEd_Datas" class="rq-link"><span class="dot"></span> Benchmarks(2,095 instances) </a>
+        <a href="https://github.com/CoEdBench/CoEd_Datas/blob/main/rq1" class="rq-link"><span class="dot"></span> Predictions </a>
       </div>
     </div>
 
@@ -391,10 +390,8 @@
       <h3>SFT on CoEdBench-Train</h3>
       <p>Does supervised fine-tuning on CoEdBench-Train improve collaborative editing? Qwen2.5-32B CEB-F1: 41.8% → 77.6%.</p>
       <div class="rq-links">
-        <a href="train_set.jsonl" class="rq-link"><span class="dot"></span>CoEdBench-Train (6,026 inst.)</a>
-        <a href="RQ2/Qwen_SFT/run_qwen2.5_32B_sft_full_test__qwen2.5-32b_sft__20260528_132536.jsonl" class="rq-link"><span class="dot"></span>Qwen2.5-32B SFT Results</a>
-        <a href="RQ2/Qwen_SFT/run_qwen2.5_14B_sft_full_test__qwen2.5-14b_sft__20260528_065250.jsonl" class="rq-link"><span class="dot"></span>Qwen2.5-14B SFT Results</a>
-        <a href="RQ2/Qwen_SFT/run_qwen2.5_7B_sft_full_test__qwen2.5-7b_sft__20260525_015014.jsonl" class="rq-link"><span class="dot"></span>Qwen2.5-7B SFT Results</a>
+        <a href="https://github.com/CoEdBench/CoEd_Datas" class="rq-link"><span class="dot"></span>CoEdBench-Train (6,026 inst.)</a>
+        <a href="https://github.com/CoEdBench/CoEd_Datas/blob/main/rq2" class="rq-link"><span class="dot"></span>SFT Results</a>
       </div>
     </div>
 
@@ -404,7 +401,7 @@
       <h3>Bottleneck Analysis</h3>
       <p>Manual analysis of 1,300 agent trajectories (325 instances × 4 models). Identifies S1–S3 symptoms and R1–R7 root causes.</p>
       <div class="rq-links">
-        <a href="RQ3/" class="rq-link"><span class="dot"></span>RQ3 Data</a>
+        <a href="https://github.com/CoEdBench/CoEd_Datas/blob/main/rq3" class="rq-link"><span class="dot"></span>RQ3 Data</a>
       </div>
     </div>
 
