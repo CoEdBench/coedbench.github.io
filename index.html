@@ -69,7 +69,7 @@
     /* STATS */
     .stats-bar {
       max-width: 860px; margin: 0 auto 70px; padding: 0 2rem;
-      display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px;
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
       background: var(--border); border: 1px solid var(--border); border-radius: 12px; overflow: hidden;
     }
     .stat-item {
@@ -171,7 +171,7 @@
     .divider { height: 1px; background: var(--border); margin: 0 2rem 70px; max-width: 900px; margin-left: auto; margin-right: auto; }
 
     @media (max-width: 640px) {
-      .stats-bar { grid-template-columns: repeat(2, 1fr); }
+      .stats-bar { grid-template-columns: repeat(3, 1fr); }
       .framework-grid, .rq-grid { grid-template-columns: 1fr; }
       .nav-links { display: none; }
     }
@@ -186,7 +186,7 @@
     <a href="#benchmark">Benchmark</a>
     <a href="#results">Results</a>
     <a href="#rq">Experiments</a>
-    <a href="#paper">Paper</a>
+    <a href="#resources">Resources</a>
   </div>
 </nav>
 
@@ -224,10 +224,6 @@
   <div class="stat-item">
     <div class="stat-num">36.3%</div>
     <div class="stat-label">Cross-file Modifications</div>
-  </div>
-  <div class="stat-item">
-    <div class="stat-num">4.01</div>
-    <div class="stat-label">Avg CEBs per Instance</div>
   </div>
 </div>
 
@@ -368,7 +364,7 @@
 	    </table>
 	  </div>
 	  <p style="font-size:0.75rem; color:var(--muted); margin-top:0.6rem;">
-	    Pass% evaluated on 82 Python executable environments.
+	    Pass% evaluated on 82 executable environments.
 	  </p>
 	</section>
 
@@ -415,9 +411,9 @@
   </div>
 </section>
 
-<!-- PAPER SECTION -->
-<section id="paper">
-  <div class="section-title">Paper & Resources</div>
+<!-- RESOURCES SECTION -->
+<section id="resources">
+  <div class="section-title">Resources</div>
   <div class="framework-grid">
     <!-- <div class="framework-card" style="display:flex; gap:1rem; align-items:flex-start;">
       <div style="font-size:2.5rem; line-height:1;">📄</div>
