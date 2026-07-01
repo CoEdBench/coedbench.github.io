@@ -200,17 +200,17 @@
   </p>
 
   <div class="btn-group">
-    <a href="#paper" class="btn btn-primary">
+    <a href="#" class="btn btn-primary">
       <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-      Zendo
+      Paper (Coming Soon)
     </a>
-    <a href="https://github.com/coedbench" class="btn btn-outline">
+    <a href="https://github.com/CoEdBench" class="btn btn-outline">
       <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
       GitHub
     </a>
-    <a href="#benchmark" class="btn btn-outline">
+    <a href="https://github.com/CoEdBench/CoEd_Benchmark_Builder" class="btn btn-outline">
       <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-      Dataset
+      Dataset & Code
     </a>
   </div>
 </div>
@@ -248,16 +248,20 @@
   </div>
 
   <div class="framework-grid">
-    <div class="framework-card">
-      <div class="tag tag-blue">Pipeline Framework</div>
-      <h3>Co-Editing Pipeline</h3>
-      <p>Oracle Context provided. Evaluates the upper-bound of localization and generation under ideal retrieval conditions. Two-stage: Impact Localization → Location-Wise Generation.</p>
-    </div>
-    <div class="framework-card">
-      <div class="tag tag-cyan">Agent Framework</div>
-      <h3>Co-Editing Agent</h3>
-      <p>Only Requirement + Trigger Edit given. Model autonomously explores the full repository using GrepTool, ViewCode, StringReplace tools. End-to-end evaluation, ≤30 iterations.</p>
-    </div>
+    <a href="https://github.com/CoEdBench/CoEdEvaluationFrameworks" style="text-decoration:none;">
+      <div class="framework-card">
+        <div class="tag tag-blue">Pipeline Framework</div>
+        <h3>Co-Editing Pipeline</h3>
+        <p>Oracle Context provided. Evaluates the upper-bound of localization and generation under ideal retrieval conditions. Two-stage: Impact Localization → Location-Wise Generation.</p>
+      </div>
+    </a>
+    <a href="https://github.com/CoEdBench/CoEdEvaluationFrameworks" style="text-decoration:none;">
+      <div class="framework-card">
+        <div class="tag tag-cyan">Agent Framework</div>
+        <h3>Co-Editing Agent</h3>
+        <p>Only Requirement + Trigger Edit given. Model autonomously explores the full repository using GrepTool, ViewCode, StringReplace tools. End-to-end evaluation, ≤30 iterations.</p>
+      </div>
+    </a>
   </div>
 
   <div style="margin-top:1.2rem;">
@@ -366,10 +370,10 @@
       <h3>Baseline Model Performance</h3>
       <p>How well do current LLMs perform on repository-level multi-target collaborative code editing under Pipeline and Agent settings?</p>
       <div class="rq-links">
-        <a href="#" class="rq-link"><span class="dot"></span>Full Results Table (CSV)</a>
-        <a href="#" class="rq-link"><span class="dot"></span>Pipeline Predictions</a>
-        <a href="#" class="rq-link"><span class="dot"></span>Agent Trajectories</a>
-        <a href="#" class="rq-link"><span class="dot"></span>Python Test Environments</a>
+        <a href="RQ1/Pipeline/COMPARISON_REPORT.txt" class="rq-link"><span class="dot"></span>Pipeline Comparison Report</a>
+        <a href="RQ1/Pipeline/claude/run_claude_full.jsonl" class="rq-link"><span class="dot"></span>Pipeline Predictions (Claude)</a>
+        <a href="RQ1/Agent/sonnet-4-6/fim_results.jsonl" class="rq-link"><span class="dot"></span>Agent Results (Claude)</a>
+        <a href="test_filtered.jsonl" class="rq-link"><span class="dot"></span>Python Test Set</a>
       </div>
     </div>
 
@@ -379,10 +383,10 @@
       <h3>SFT on CoEdBench-Train</h3>
       <p>Does supervised fine-tuning on CoEdBench-Train improve collaborative editing? Qwen2.5-32B CEB-F1: 41.8% → 77.6%.</p>
       <div class="rq-links">
-        <a href="#" class="rq-link"><span class="dot"></span>CoEdBench-Train (6,026 inst.)</a>
-        <a href="#" class="rq-link"><span class="dot"></span>SFT Model Checkpoints</a>
-        <a href="#" class="rq-link"><span class="dot"></span>Training Config (JSON)</a>
-        <a href="#" class="rq-link"><span class="dot"></span>Pre/Post SFT Comparison</a>
+        <a href="train_set.jsonl" class="rq-link"><span class="dot"></span>CoEdBench-Train (6,026 inst.)</a>
+        <a href="RQ2/Qwen_SFT/run_qwen2.5_32B_sft_full_test__qwen2.5-32b_sft__20260528_132536.jsonl" class="rq-link"><span class="dot"></span>Qwen2.5-32B SFT Results</a>
+        <a href="RQ2/Qwen_SFT/run_qwen2.5_14B_sft_full_test__qwen2.5-14b_sft__20260528_065250.jsonl" class="rq-link"><span class="dot"></span>Qwen2.5-14B SFT Results</a>
+        <a href="RQ2/Qwen_SFT/run_qwen2.5_7B_sft_full_test__qwen2.5-7b_sft__20260525_015014.jsonl" class="rq-link"><span class="dot"></span>Qwen2.5-7B SFT Results</a>
       </div>
     </div>
 
@@ -392,10 +396,10 @@
       <h3>Bottleneck Analysis</h3>
       <p>Manual analysis of 1,300 agent trajectories (325 instances × 4 models). Identifies S1–S3 symptoms and R1–R7 root causes.</p>
       <div class="rq-links">
-        <a href="#" class="rq-link"><span class="dot"></span>Sampled Trajectories (325)</a>
-        <a href="#" class="rq-link"><span class="dot"></span>Annotation Results</a>
-        <a href="#" class="rq-link"><span class="dot"></span>Symptom Distribution (CSV)</a>
-        <a href="#" class="rq-link"><span class="dot"></span>Case Studies</a>
+        <a href="RQ3/rq3__analysis.md" class="rq-link"><span class="dot"></span>Analysis Report</a>
+        <a href="RQ3/rq3_task_hash_mapping.json" class="rq-link"><span class="dot"></span>Task-Hash Mapping</a>
+        <a href="RQ3/rq3_task_hash_mapping.md" class="rq-link"><span class="dot"></span>Task-Hash Mapping (MD)</a>
+        <a href="RQ3/example_traces/" class="rq-link"><span class="dot"></span>Example Trajectories</a>
       </div>
     </div>
 
@@ -424,8 +428,9 @@
         <h3 style="margin-bottom:0.4rem;">Dataset & Code</h3>
         <p style="margin-bottom:0.8rem;">Full benchmark (2,095 test + 6,026 train), evaluation scripts, and agent framework on GitHub.</p>
         <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
-          <a href="https://github.com/coedbench" class="btn btn-primary" style="font-size:0.78rem; padding:6px 14px;">GitHub</a>
-          <a href="#" class="btn btn-outline" style="font-size:0.78rem; padding:6px 14px;">HuggingFace</a>
+          <a href="https://github.com/CoEdBench" class="btn btn-primary" style="font-size:0.78rem; padding:6px 14px;">GitHub Org</a>
+          <a href="https://github.com/CoEdBench/CoEd_Benchmark_Builder" class="btn btn-outline" style="font-size:0.78rem; padding:6px 14px;">Data Builder</a>
+          <a href="https://github.com/CoEdBench/CoEdEvaluationFrameworks" class="btn btn-outline" style="font-size:0.78rem; padding:6px 14px;">Evaluation</a>
         </div>
       </div>
     </div>
@@ -435,7 +440,7 @@
 <!-- FOOTER -->
 <footer>
   <p>CoEdBench · &nbsp;|&nbsp; <a href="https://coedbench.github.io">coedbench.github.io</a></p>
-  <p style="margin-top:4px;">Questions? Open an issue on <a href="https://github.com/coedbench">GitHub</a>.</p>
+  <p style="margin-top:4px;">Questions? Open an issue on <a href="https://github.com/CoEdBench">GitHub</a>.</p>
 </footer>
 
 </body>
